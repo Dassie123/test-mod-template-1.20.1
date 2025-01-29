@@ -36,6 +36,7 @@ public class ModItemGroup {
                         entries.add(ModItems.MAGIC_BLANKET_HORSE_ARMOR);
 
                         entries.add(ModItems.DATA_TABLET);
+                        //hi
 
                         entries.add(ModBlocks.MAGIC_BLANKET_BLOCK);
                         entries.add(ModBlocks.RAW_MAGIC_BLANKET_BLOCK);
