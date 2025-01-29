@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "testmod:magic_blanket_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "testmod:magic_blanket"
+  }
+}

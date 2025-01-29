@@ -1,0 +1,58 @@
+{
+  "item.testmod.magic_blanket": "Magicblanket",
+  "item.testmod.raw_magic_blanket": "Raw Magicblanket",
+  "item.testmod.treasure_finder": "Treasure Finder",
+  "item.testmod.broccoli": "Broccoli",
+  "item.testmod.coal_coke": "Coal Coke",
+
+  "item.testmod.magic_blanket_sword": "Magicblanket Sword",
+  "item.testmod.magic_blanket_pickaxe": "Magicblanket Pickaxe",
+  "item.testmod.magic_blanket_shovel": "Magicblanket Shovel",
+  "item.testmod.magic_blanket_axe": "Magicblanket Axe",
+  "item.testmod.magic_blanket_hoe": "Magicblanket Hoe",
+  "item.testmod.magic_blanket_paxel": "Magicblanket Paxel",
+
+  "item.testmod.magic_blanket_helmet": "Magicblanket Helmet",
+  "item.testmod.magic_blanket_chestplate": "Magicblanket Chestplate",
+  "item.testmod.magic_blanket_leggings": "Magicblanket Leggings",
+  "item.testmod.magic_blanket_boots": "Magicblanket Boots",
+  "item.testmod.magic_blanket_horse_armor": "Magicblanket Horse Armor",
+
+  "item.testmod.data_tablet": "Data Tablet",
+
+  "block.testmod.magic_blanket_block": "Block of Magicblanket",
+  "block.testmod.raw_magic_blanket_block": "Block of Raw Magicblanket",
+
+  "block.testmod.deepslate_magic_blanket_ore": "Deepslate Magicblanket Ore",
+  "block.testmod.end_stone_magic_blanket_ore": "End Stone Magicblanket Ore",
+  "block.testmod.nether_magic_blanket_ore": "Nether Magicblanket Ore",
+  "block.testmod.magic_blanket_ore": "Magicblanket Ore",
+
+  "block.testmod.music_block": "Music Block",
+
+  "block.testmod.magic_blanket_stairs": "Magicblanket Stairs",
+  "block.testmod.magic_blanket_slab": "Magicblanket Slab",
+
+  "block.testmod.magic_blanket_button": "Magicblanket Button",
+  "block.testmod.magic_blanket_pressure_plate": "Magicblanket Pressure Plate",
+
+  "block.testmod.magic_blanket_fence": "Magicblanket Fence",
+  "block.testmod.magic_blanket_fence_gate": "Magicblanket Fence Gate",
+  "block.testmod.magic_blanket_wall": "Magicblanket Wall",
+
+  "block.testmod.magic_blanket_door": "Magicblanket Door",
+  "block.testmod.magic_blanket_trapdoor": "Magicblanket Trapdoor",
+
+  "block.testmod.magic_blanket_lamp_block": "Magicblanket Lamp Block",
+
+  
+  "item.testmod.treasure_finder.no_treasure": "No Treasure Found!",
+
+  "itemgroup.magic_blanket_group": "Magicblanket Course Group",
+
+  "enchantment.testmod.evoker_fang": "Evoker Fang",
+
+  "tooltip.testmod.treasure_finder.tooltip.shift": "Right Click on Blocks to find Treasure!",
+  "tooltip.testmod.treasure_finder.tooltip": "Press §eSHIFT§r for more Information",
+  "tooltip.testmod.music_block": "Plays a nice sound when Walking on, or being Right-Clicked"
+}

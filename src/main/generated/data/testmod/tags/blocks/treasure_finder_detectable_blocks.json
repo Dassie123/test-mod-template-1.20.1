@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:chest",
+    "#minecraft:planks",
+    "#minecraft:stone_bricks",
+    "#minecraft:fences",
+    "minecraft:end_portal_frame",
+    "minecraft:cobweb",
+    "minecraft:rail",
+    "minecraft:mossy_cobblestone",
+    "minecraft:cobblestone",
+    "minecraft:spawner"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:magic_blanket_ore",
+    "testmod:magic_blanket_block",
+    "testmod:raw_magic_blanket_block",
+    "testmod:deepslate_magic_blanket_ore",
+    "testmod:end_stone_magic_blanket_ore",
+    "testmod:nether_magic_blanket_ore",
+    "testmod:music_block",
+    "testmod:magic_blanket_stairs",
+    "testmod:magic_blanket_slab",
+    "testmod:magic_blanket_pressure_plate",
+    "testmod:magic_blanket_fence",
+    "testmod:magic_blanket_fence_gate",
+    "testmod:magic_blanket_wall",
+    "testmod:magic_blanket_door",
+    "testmod:magic_blanket_trapdoor",
+    "testmod:magic_blanket_lamp_block"
+  ]
+}

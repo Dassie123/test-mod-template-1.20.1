@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "testmod:block/raw_magic_blanket_block"
+    }
+  }
+}

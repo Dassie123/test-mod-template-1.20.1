@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:magic_blanket_ore",
+    "testmod:magic_blanket_block",
+    "testmod:raw_magic_blanket_block"
+  ]
+}

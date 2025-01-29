@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:magic_blanket_helmet",
+    "testmod:magic_blanket_chestplate",
+    "testmod:magic_blanket_leggings",
+    "testmod:magic_blanket_boots"
+  ]
+}
