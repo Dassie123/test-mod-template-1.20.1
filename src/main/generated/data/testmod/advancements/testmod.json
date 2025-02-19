@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "has_magic_blanket": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "testmod:magic_blanket"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "testmod:textures/block/magic_blanket_ore.png",
+    "description": {
+      "text": "The Heart of the SMMEC"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "testmod:magic_blanket"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Testmod"
+    }
+  },
+  "requirements": [
+    [
+      "has_magic_blanket"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

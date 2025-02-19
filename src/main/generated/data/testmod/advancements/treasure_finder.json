@@ -1,0 +1,40 @@
+{
+  "parent": "testmod:testmod",
+  "criteria": {
+    "has_used_treasure_finder": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "testmod:treasure_finder"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "testmod:textures/block/magic_blanket_ore",
+    "description": {
+      "text": "Your number one partner in making a fortune"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "testmod:treasure_finder",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Treasure Finder"
+    }
+  },
+  "requirements": [
+    [
+      "has_used_treasure_finder"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -36,7 +36,7 @@ public class DataTabletItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(stack.hasNbt()) {
-            String currentFoundValuable = stack.getNbt().getString("mccourse.last_treasure_found");
+            String currentFoundValuable = stack.getNbt().getString("testmod.last_treasure_found");
             tooltip.add(Text.literal(currentFoundValuable));
         }
     }

@@ -9,11 +9,12 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.petrus.testmod.TestMod;
 import net.petrus.testmod.block.ModBlocks;
+import net.petrus.testmod.fluid.ModFluids;
 
 public class ModItemGroup {
     public static final ItemGroup MAGIC_BLANKET_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TestMod.MOD_ID, "magic_blanket_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.magic_blanket_group"))
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.testmod_group"))
                     .icon(() -> new ItemStack(ModItems.MAGIC_BLANKET)).entries((displayContext, entries) -> {
                         entries.add(ModItems.MAGIC_BLANKET);
                         entries.add(ModItems.RAW_MAGIC_BLANKET);
@@ -36,7 +37,18 @@ public class ModItemGroup {
                         entries.add(ModItems.MAGIC_BLANKET_HORSE_ARMOR);
 
                         entries.add(ModItems.DATA_TABLET);
-                        //hi
+
+                        entries.add(ModItems.BROCCOLI_SEEDS);
+
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
+
+                        entries.add(ModItems.RADIATION_STAFF);
+
+                        entries.add(ModItems.MAGIC_BLANKET_BOW);
+
+                        entries.add(ModItems.MAGIC_BLANKET_SHIELD);
+
+                        entries.add(ModFluids.SOAP_WATER_BUCKET);
 
                         entries.add(ModBlocks.MAGIC_BLANKET_BLOCK);
                         entries.add(ModBlocks.RAW_MAGIC_BLANKET_BLOCK);
@@ -62,6 +74,10 @@ public class ModItemGroup {
                         entries.add(ModBlocks.MAGIC_BLANKET_TRAPDOOR);
 
                         entries.add(ModBlocks.MAGIC_BLANKET_LAMP_BLOCK);
+
+                        entries.add(ModBlocks.ARUM_LILY);
+
+                        entries.add(ModBlocks.MAGIC_BLANKET_EMPOWERING_STATION);
 
                     }).build());
 

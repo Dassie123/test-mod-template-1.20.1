@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import net.petrus.testmod.TestMod;
 import net.petrus.testmod.block.ModBlocks;
 import net.petrus.testmod.item.custom.*;
+import net.petrus.testmod.sound.ModSounds;
 
 public class ModItems {
     public static final Item MAGIC_BLANKET = registerItem("magic_blanket",
@@ -52,6 +53,21 @@ public class ModItems {
 
     public static final Item DATA_TABLET = registerItem("data_tablet",
             new DataTabletItem(new FabricItemSettings().maxCount(1)));
+
+    public static final Item BROCCOLI_SEEDS = registerItem("broccoli_seeds",
+            new AliasedBlockItem(ModBlocks.BROCCOLI_CROP, new FabricItemSettings()));
+
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new MusicDiscItem(9, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
+
+    public static final Item RADIATION_STAFF = registerItem("radiation_staff",
+            new Item(new FabricItemSettings()));
+
+    public static Item MAGIC_BLANKET_BOW = registerItem("magic_blanket_bow",
+            new BowItem(new FabricItemSettings().maxDamage(500)));
+
+    public static Item MAGIC_BLANKET_SHIELD = registerItem("magic_blanket_shield",
+            new ShieldItem(new FabricItemSettings().maxDamage(500)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TestMod.MOD_ID, name), item);

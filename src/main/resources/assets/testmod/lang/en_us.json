@@ -20,6 +20,21 @@
 
   "item.testmod.data_tablet": "Data Tablet",
 
+  "item.testmod.broccoli_seeds": "Broccoli Seeds",
+
+  "item.testmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.testmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl CC0",
+
+  "item.testmod.radiation_staff": "Radiation Staff",
+
+  "item.testmod.magic_blanket_bow": "Magic Blanket Bow",
+
+  "item.testmod.magic_blanket_shield": "Magic Blanket Shield",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
   "block.testmod.magic_blanket_block": "Block of Magicblanket",
   "block.testmod.raw_magic_blanket_block": "Block of Raw Magicblanket",
 
@@ -45,14 +60,31 @@
 
   "block.testmod.magic_blanket_lamp_block": "Magicblanket Lamp Block",
 
+  "block.testmod.arum_lily": "Arum Lily",
+
+  "block.testmod.magic_blanket_empowering_station": "Magicblanket Empowering Station",
+
   
   "item.testmod.treasure_finder.no_treasure": "No Treasure Found!",
 
-  "itemgroup.magic_blanket_group": "Magicblanket Course Group",
+  "itemgroup.testmod_group": "Testmod Group",
 
   "enchantment.testmod.evoker_fang": "Evoker Fang",
 
   "tooltip.testmod.treasure_finder.tooltip.shift": "Right Click on Blocks to find Treasure!",
   "tooltip.testmod.treasure_finder.tooltip": "Press §eSHIFT§r for more Information",
-  "tooltip.testmod.music_block": "Plays a nice sound when Walking on, or being Right-Clicked"
+  "tooltip.testmod.music_block": "Plays a nice sound when Walking on, or being Right-Clicked",
+
+  "sound.testmod.treasure_finder_found_ore": "Treasure Finder Found an Ore",
+
+  "painting.testmod.world.title": "World",
+  "paintong.testmod.world.author": "NanoAttack",
+  "painting.testmod.shrimp.title": "Shrimp",
+  "painting.testmod.shrimp.author": "NanoAttack",
+  "painting.testmod.saw_them.title": "Saw Them",
+  "painting.testmod.saw_them.author": "NanoAttack",
+
+  "entity.minecraft.villager.soundmaster": "Soundmaster",
+
+  "effect.testmod.slimey": "Slimey"
 }

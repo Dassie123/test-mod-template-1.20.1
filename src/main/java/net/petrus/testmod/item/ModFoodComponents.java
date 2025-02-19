@@ -1,4 +1,4 @@
-package net.petrus.testmod.item.custom;
+package net.petrus.testmod.item;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;

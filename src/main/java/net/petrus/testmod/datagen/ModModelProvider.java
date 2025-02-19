@@ -6,7 +6,9 @@ import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 import net.petrus.testmod.block.ModBlocks;
+import net.petrus.testmod.block.custom.BroccoliCropBlock;
 import net.petrus.testmod.block.custom.MagicBlanketLampBlock;
+import net.petrus.testmod.fluid.ModFluids;
 import net.petrus.testmod.item.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -40,6 +42,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.MAGIC_BLANKET_TRAPDOOR);
 
         registerCustomLamp(blockStateModelGenerator);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.BROCCOLI_CROP, BroccoliCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ARUM_LILY, ModBlocks.POTTED_ARUM_LILY, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.MAGIC_BLANKET_EMPOWERING_STATION);
     }
 
     private void registerCustomLamp(BlockStateModelGenerator blockStateModelGenerator) {
@@ -55,7 +63,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_MAGIC_BLANKET, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BROCCOLI, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.COAL_COKE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.TREASURE_FINDER, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MAGIC_BLANKET_SWORD, Models.HANDHELD);
@@ -72,7 +82,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.MAGIC_BLANKET_HORSE_ARMOR, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
 
+        itemModelGenerator.register(ModFluids.SOAP_WATER_BUCKET, Models.GENERATED);
+
+        //itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
     }
 }

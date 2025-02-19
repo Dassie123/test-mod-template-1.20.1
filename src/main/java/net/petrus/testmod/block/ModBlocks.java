@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -11,8 +12,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.petrus.testmod.TestMod;
+import net.petrus.testmod.block.custom.BroccoliCropBlock;
+import net.petrus.testmod.block.custom.MagicBlanketEmpoweringStationBlock;
 import net.petrus.testmod.block.custom.MagicBlanketLampBlock;
 import net.petrus.testmod.block.custom.MusicBlock;
+import net.petrus.testmod.sound.ModSounds;
 
 public class ModBlocks {
     public static final Block MAGIC_BLANKET_BLOCK = registerBlock("magic_blanket_block",
@@ -57,7 +61,24 @@ public class ModBlocks {
 
     public static final Block MAGIC_BLANKET_LAMP_BLOCK = registerBlock("magic_blanket_lamp_block",
             new MagicBlanketLampBlock(FabricBlockSettings.create().mapColor(MapColor.RAW_IRON_PINK).instrument(Instrument.BASEDRUM)
-                    .strength(4f).requiresTool().luminance(state -> state.get(MagicBlanketLampBlock.CLICKED) ? 15 : 0)));
+                    .strength(4f).requiresTool().luminance(state -> state.get(MagicBlanketLampBlock.CLICKED) ? 15 : 0)
+                    .sounds(ModSounds.MAGIC_BLANKET_LAMP_SOUNDS)));
+
+
+    public static final Block BROCCOLI_CROP = registerBlockWithoutBlockItem("broccoli_crop",
+            new BroccoliCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
+    public static final Block ARUM_LILY = registerBlock("arum_lily",
+            new FlowerBlock(StatusEffects.GLOWING, 4, FabricBlockSettings.copyOf(Blocks.ALLIUM)));
+    public static final Block POTTED_ARUM_LILY = registerBlockWithoutBlockItem("potted_arum_lily",
+            new FlowerPotBlock(ARUM_LILY, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM)));
+
+    public static final Block MAGIC_BLANKET_EMPOWERING_STATION = registerBlock("magic_blanket_empowering_station",
+            new MagicBlanketEmpoweringStationBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, new Identifier(TestMod.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -11,13 +11,21 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.petrus.testmod.item.ModArmorMaterials;
 
+import java.util.List;
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
-    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
-            new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>()
-                    .put(ModArmorMaterials.MAGIC_BLANKET, new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 5))
-                    .build();
+    private static final Map<ArmorMaterial, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
+            (new ImmutableMap.Builder<ArmorMaterial, List<StatusEffectInstance>>())
+                    .put(ModArmorMaterials.MAGIC_BLANKET,
+                            List.of(new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 5, false, false),
+                            new StatusEffectInstance(StatusEffects.WATER_BREATHING, 400, 0, false, false),
+                                    new StatusEffectInstance(StatusEffects.STRENGTH, 400, 320, false, false),
+                                    new StatusEffectInstance(StatusEffects.NIGHT_VISION, 400, 0, false,false),
+                                    new StatusEffectInstance(StatusEffects.JUMP_BOOST, 400, 5, false, false),
+                                    new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 400, 5, false, false),
+                                    new StatusEffectInstance(StatusEffects.SPEED, 400, 5, false, false),
+                                    new StatusEffectInstance(StatusEffects.SATURATION, 400, 0, false, false))).build();
 
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);
@@ -35,9 +43,9 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private void evaluateArmorEffects(PlayerEntity player) {
-        for(Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
+        for(Map.Entry<ArmorMaterial, List<StatusEffectInstance>> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
             ArmorMaterial mapArmorMaterial = entry.getKey();
-            StatusEffectInstance mapStatusEffect = entry.getValue();
+            List<StatusEffectInstance> mapStatusEffect = entry.getValue();
 
             if(hasCorrectArmorOn(mapArmorMaterial, player)) {
                 addStatusEffectForMaterial(player, mapStatusEffect);
@@ -46,12 +54,14 @@ public class ModArmorItem extends ArmorItem {
         }
     }
 
-    private void addStatusEffectForMaterial(PlayerEntity player, StatusEffectInstance mapStatusEffect) {
-        boolean hasPlayerEffectAlready = player.hasStatusEffect(mapStatusEffect.getEffectType());
+    private void addStatusEffectForMaterial(PlayerEntity player, List<StatusEffectInstance> mapStatusEffect) {
+        boolean hasPlayerEffectAlready = mapStatusEffect.stream().allMatch(statusEffectInstance -> player.hasStatusEffect(statusEffectInstance.getEffectType()));
 
         if(!hasPlayerEffectAlready) {
-            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
-                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
+            for(StatusEffectInstance instance : mapStatusEffect) {
+                player.addStatusEffect(new StatusEffectInstance(instance.getEffectType(),
+                        instance.getDuration(), instance.getAmplifier()));
+            }
         }
     }
 
@@ -81,4 +91,3 @@ public class ModArmorItem extends ArmorItem {
                 && !chestplate.isEmpty() && !helmet.isEmpty();
     }
 }
-

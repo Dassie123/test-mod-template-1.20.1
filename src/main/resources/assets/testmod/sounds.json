@@ -1,0 +1,47 @@
+{
+  "treasure_finder_found_treasure": {
+    "subtitle": "sounds.testmod.treasure_finder_found_treasure",
+    "sounds": [
+      "testmod:treasure_finder_found_treasure"
+    ]
+  },
+  "magic_blanket_lamp_break": {
+    "subtitle": "sounds.testmod.magic_blanket_lamp_break",
+    "sounds": [
+      "testmod:magic_blanket_lamp_break"
+    ]
+  },
+  "magic_blanket_lamp_step": {
+    "subtitle": "sounds.testmod.magic_blanket_lamp_step",
+    "sounds": [
+      "testmod:magic_blanket_lamp_step"
+    ]
+  },
+  "magic_blanket_lamp_place": {
+    "subtitle": "sounds.testmod.magic_blanket_lamp_place",
+    "sounds": [
+      "testmod:magic_blanket_lamp_place"
+    ]
+  },
+  "magic_blanket_lamp_hit": {
+    "subtitle": "sounds.testmod.magic_blanket_lamp_hit",
+    "sounds": [
+      "testmod:magic_blanket_lamp_hit"
+    ]
+  },
+  "magic_blanket_lamp_fall": {
+    "subtitle": "sounds.testmod.magic_blanket_lamp_fall",
+    "sounds": [
+      "testmod:magic_blanket_lamp_fall"
+    ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "testmod:bar_brawl",
+        "stream": true
+      }
+    ]
+  }
+}
+
